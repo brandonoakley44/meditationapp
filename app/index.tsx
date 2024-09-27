@@ -1,17 +1,14 @@
-import { Image, StyleSheet, Platform, View, Text } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function HomeScreen() {
+const Index = () => {
   return (
-    <View style={styles.container}>
-      <Text>Hey boss</Text>
+    <View>
+      <Text>App</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    flex: 1,
-    justifyContent: 'center',
-  }
-})
+const styles = StyleSheet.create({})
+
+export default Index;
