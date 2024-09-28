@@ -24,14 +24,14 @@ const Index = () => {
         <AppGradient
         colors={["rgba(0,0,0,0.4)", "rgba(0,0,0,0.8)"]}
         >
-            <SafeAreaView className='flex-1 px-1  justify-between'>
+            <SafeAreaView className='flex-1 px-2 mb-4 justify-between'>
                 <View>
                   <Text className="text-center text-white font-bold text-4xl">Simple meditation</Text>
                   <Text className='text-center text-white text-regular text-2xl mt-3'>
                     Simplifying meditation for everyone
                   </Text>
                 </View>
-                <View>
+                <View className='px-3'>
                 <CustomButton
                     onPress={() => router.push('/nature-meditate')}
                     title="Get Started"

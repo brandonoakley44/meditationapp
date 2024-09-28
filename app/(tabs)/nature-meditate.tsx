@@ -13,7 +13,7 @@ const NatureMeditate = () => {
             <AppGradient
                 colors={["#161B2E", "#0A4D4A", "#766E67"]}
             >
-                <View className='mb-6'>
+                <View className='mb-6 mx-2'>
                     <Text className='text-gray-200 mb-3 font-bold text-4xl text-left'>Welcome, Brandon</Text>
                     <Text
                         className='text-indigo-100 text-xl font-md'
@@ -21,7 +21,7 @@ const NatureMeditate = () => {
                         Start your meditation practice today
                     </Text>
                 </View>
-                <View>
+                <View className='mx-2'>
                     <FlatList
                     keyExtractor={(item) => item.id.toString()}
                     data={MEDITATION_DATA}
@@ -32,7 +32,7 @@ const NatureMeditate = () => {
                         onPress={() => console.log('press')}
                         className='h-48 my-3 rounded-md overflow-hidden'>
                             <ImageBackground
-                              //  source={MEDITATION_IMAGES[item.id - 1]}
+                                source={MEDITATION_IMAGES[item.id - 1]}
                                 resizeMode='cover'
                                 className='flex-1 rounded-lg justify-center'
                             >
