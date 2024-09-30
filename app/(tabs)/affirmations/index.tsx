@@ -25,6 +25,5 @@ const Affirmations = () => {
     );
 }
 
-const styles = StyleSheet.create({})
 
 export default Affirmations;
